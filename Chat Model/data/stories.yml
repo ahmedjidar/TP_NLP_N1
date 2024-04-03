@@ -1,0 +1,95 @@
+version: "3.1"
+
+stories:
+
+- story: networking path
+  steps:
+  - intent: explain_networking
+  - action: utter_explain_networking
+
+- story: internet path
+  steps:
+  - intent: explain_internet
+  - action: utter_explain_internet
+
+- story: tcpip path
+  steps:
+  - intent: explain_tcpip
+  - action: utter_explain_tcpip
+
+- story: router path
+  steps:
+  - intent: explain_router
+  - action: utter_explain_router
+
+- story: ipv4_ipv6 path
+  steps:
+  - intent: explain_ipv4_ipv6
+  - action: utter_explain_ipv4_ipv6
+
+- story: subnet path
+  steps:
+  - intent: explain_subnet
+  - action: utter_explain_subnet
+
+- story: switch path
+  steps:
+  - intent: explain_switch
+  - action: utter_explain_switch
+
+- story: dns path
+  steps:
+  - intent: explain_dns
+  - action: utter_explain_dns
+
+- story: firewall path
+  steps:
+  - intent: explain_firewall
+  - action: utter_explain_firewall
+
+- story: public_private_ip path
+  steps:
+  - intent: explain_public_private_ip
+  - action: utter_explain_public_private_ip
+
+- story: osi_model path
+  steps:
+  - intent: explain_osi_model
+  - action: utter_explain_osi_model
+
+- story: vpn path
+  steps:
+  - intent: explain_vpn
+  - action: utter_explain_vpn
+
+- story: lan_wan path
+  steps:
+  - intent: explain_lan_wan
+  - action: utter_explain_lan_wan
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye

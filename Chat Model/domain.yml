@@ -1,0 +1,86 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - explain_networking
+  - explain_internet
+  - explain_tcpip
+  - explain_router
+  - explain_ipv4_ipv6
+  - explain_subnet
+  - explain_switch
+  - explain_dns
+  - explain_firewall
+  - explain_public_private_ip
+  - explain_osi_model
+  - explain_vpn
+  - explain_lan_wan
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_explain_networking:
+  - text: "Networking is the practice of linking two or more computing devices together for the purpose of sharing data."
+
+  utter_explain_internet:
+  - text: "The internet is a global network of networks. It uses TCP/IP to communicate between networks and devices."
+
+  utter_explain_tcpip:
+  - text: "TCP/IP is a suite of communication protocols used to interconnect network devices on the internet."
+
+  utter_explain_router:
+  - text: "A router is a networking device that forwards data packets between computer networks."
+
+  utter_explain_ipv4_ipv6:
+  - text: "IPv4 uses 32-bit addresses whereas IPv6 uses 128-bit addresses."
+
+  utter_explain_subnet:
+  - text: "A subnet is a logical subdivision of an IP network."
+
+  utter_explain_switch:
+  - text: "In a network, a switch is a device that channels incoming data from multiple input ports to the specific output port that will take the data toward its intended destination."
+
+  utter_explain_dns:
+  - text: "DNS stands for Domain Name System. It translates domain names to IP addresses so browsers can load Internet resources."
+
+  utter_explain_firewall:
+  - text: "A firewall is a network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules."
+
+  utter_explain_public_private_ip:
+  - text: "A public IP address is globally unique, and can only be assigned to a unique device. A private IP address is used within a private network, and can't be directly accessed from outside that network."
+
+  utter_explain_osi_model:
+  - text: "The OSI model is a conceptual model used to understand and describe how different network protocols interact and work together to provide network services."
+
+  utter_explain_vpn:
+  - text: "A Virtual Private Network extends a private network across a public network and enables users to send and receive data across shared or public networks as if their computing devices were directly connected to the private network."
+
+  utter_explain_lan_wan:
+  - text: "LAN stands for Local Area Network and it's a network that operates within a limited area. WAN stands for Wide Area Network and it spans over a large geographic area."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
